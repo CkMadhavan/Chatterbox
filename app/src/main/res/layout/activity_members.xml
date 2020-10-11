@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="25sp" android:gravity="center" android:textColor="#000000" android:id="@+id/textView2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Members" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/lv1"
+        android:layout_toRightOf="@+id/lv1" />
+
+    <ListView
+        android:id="@+id/lv1"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/list"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/r"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#cedcdcdc"
+            android:id="@+id/AlertImg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AlertImg"
+            android:layout_alignStart="@+id/AlertImg"
+            android:layout_alignTop="@+id/AlertImg"
+            android:layout_marginTop="15dp"
+            android:text="REMOVE USER ?"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:id="@+id/Remove" />
+
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/AlertImg"
+            android:layout_alignLeft="@+id/AlertImg"
+            android:layout_alignRight="@+id/AlertImg"
+            android:layout_alignStart="@+id/AlertImg"
+            android:layout_below="@+id/Remove"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Are You Sure That You Want To Remove The User"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/AlertImg"
+            android:layout_alignEnd="@+id/AlertImg"
+            android:layout_alignRight="@+id/AlertImg"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:text="YES"
+            android:onClick="yes"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/Yes" />
+
+        <TextView
+            android:id="@+id/No"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/AlertImg"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/Yes"
+            android:layout_toStartOf="@+id/Yes"
+            android:onClick="no"
+            android:text="NO"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="add"
+        android:text="ADD" />
+
+</RelativeLayout>

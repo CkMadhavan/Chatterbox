@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <TextView android:textSize="20sp" android:textColor="#000" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Enter Title" android:layout_below="@+id/sel" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            android:hint="Title"
+            android:inputType="text" />
+        <TextView android:textSize="20sp" android:textColor="#000" android:id="@+id/selectSubjectText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Enter Topic" android:layout_below="@+id/etTitle" />
+
+        <EditText
+            android:id="@+id/etSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/selectSubjectText"
+            android:layout_marginTop="10dp"
+            android:hint="Topic"
+            android:inputType="text" />
+
+        <ImageView
+            android:id="@+id/gl"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/select" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gl"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/sel"
+            android:onClick="selImage1"
+            android:layout_marginTop="10dp"
+            android:text="Select Group Icon" />
+
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Create Chat Room" android:layout_below="@+id/etSubject" android:layout_centerHorizontal="true" android:onClick="create"
+            android:id="@+id/button2" />
+
+        <TextView
+            android:id="@+id/tvKey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/button2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:text="Your Key"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</ScrollView>

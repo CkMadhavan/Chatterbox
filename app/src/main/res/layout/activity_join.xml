@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo" />
+    <TextView android:textSize="20sp" android:textColor="#000" android:id="@+id/selectClassText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Enter Key" android:layout_above="@+id/etEnterKey" android:layout_alignParentLeft="true" />
+    <EditText android:id="@+id/etEnterKey" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:hint="Key" android:layout_centerVertical="true" />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="Join A Chat Room" android:layout_below="@+id/etEnterKey" android:layout_centerHorizontal="true" android:onClick="join" />
+</RelativeLayout>

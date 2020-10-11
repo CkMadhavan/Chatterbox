@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/logo" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/relative"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="320dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:id="@+id/AlertImg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/AlertImg"
+            android:layout_alignStart="@+id/AlertImg"
+            android:layout_alignTop="@+id/AlertImg"
+            android:layout_marginTop="15dp"
+            android:text="UPDATES AVAILABLE"
+            android:textStyle="bold"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:id="@+id/Remove" />
+
+        <TextView
+            android:id="@+id/Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/AlertImg"
+            android:layout_alignLeft="@+id/AlertImg"
+            android:layout_alignRight="@+id/AlertImg"
+            android:layout_alignStart="@+id/AlertImg"
+            android:layout_below="@+id/Remove"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Update Chatterbox To Continue"
+            android:textColor="#000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/AlertImg"
+            android:layout_alignEnd="@+id/AlertImg"
+            android:layout_alignRight="@+id/AlertImg"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:onClick="up"
+            android:text="UPDATE"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/Update" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

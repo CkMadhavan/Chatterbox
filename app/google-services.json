@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "628190209398",
+    "firebase_url": "https://studious-1f7fc.firebaseio.com",
+    "project_id": "studious-1f7fc",
+    "storage_bucket": "studious-1f7fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628190209398:android:0ecdf7958cdc3b87",
+        "android_client_info": {
+          "package_name": "android.sabertechnologies.com.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628190209398-bl2vpfsb58d4h7v1r4oqtqth8cqsibqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkHDn0WLKoEUEo3phuu8RhYxDFWpR5eGA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628190209398:android:32f3d9c2ed9c1522",
+        "android_client_info": {
+          "package_name": "com.sabertechnologies.studious"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628190209398-bl2vpfsb58d4h7v1r4oqtqth8cqsibqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkHDn0WLKoEUEo3phuu8RhYxDFWpR5eGA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

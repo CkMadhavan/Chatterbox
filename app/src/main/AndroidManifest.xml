@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.sabertechnologies.com.android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ChatRoom" />
+        <activity android:name=".Create" />
+        <activity android:name=".Join" />
+        <activity android:name=".KeyNotAvailable" />
+        <activity android:name=".MyGroups"/>
+        <activity android:name=".First" />
+        <activity android:name=".Members" />
+        <activity android:name=".Add" />
+
+        <receiver android:name=".ReciveNoti">
+            <intent-filter>
+                <action android:name="com.broadcast" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".ImgActivity" />
+        <activity android:name=".Saberbot" />
+        <activity android:name=".ImgGCM" />
+        <activity android:name=".ImgGCM2"></activity>
+    </application>
+
+</manifest>
